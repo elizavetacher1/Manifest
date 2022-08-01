@@ -1,0 +1,95 @@
+body {
+font-family: $font-primary;
+width: 100%;
+min-width: $sm;
+color: $primary;
+font-weight: $font-weight;
+line-height: 26px;
+letter-spacing: 0.05em;
+}
+
+html {
+font-size: $font-size-default;
+}
+
+.flex, .latest-flex-reverse, .latest-flex {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+  &-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center; 
+  margin: 40px 0 35px;    
+    @include media ($lg) {
+    align-items: center;
+    }
+  }
+}
+ 
+.flex {
+  @include media($md)  {
+  flex-direction: row; 
+  flex-wrap: wrap;
+  }
+}
+
+.latest-flex {
+  @media (min-width: $md) and (max-width: $md-max)  {
+  flex-direction: row; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+}
+
+ 
+.latest-flex-reverse {
+  @media (min-width: $md) and (max-width: $md-max) {
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    } 
+  }
+ 
+
+
+.latest-flex, .latest-flex-reverse {
+  @include media($lg) {
+  width: 370px;
+  }
+}
+
+
+.flex-column {
+  margin-top: 40px;
+    @include media($md) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    }
+    @include media($md) {
+    margin-top: 0;
+    }
+    .blog-image-arrow {
+      margin-bottom: 50px;
+      }
+  }
+    
+  .flex-row {
+    @include media($md) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    }
+  }
+  
+  .latest-flex-column {
+    @include media($lg) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+  }

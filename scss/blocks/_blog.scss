@@ -1,0 +1,50 @@
+.blog {
+margin-top: 70px;
+}  
+
+.wrapper {
+height: 320px;
+  @include media($md) { 
+  height: 280px; }
+  @include media($lg) { 
+  width: 570px;
+  height: 470px;
+  }
+}
+
+.wrapper-image {
+height: 250px;
+  @include media ($lg) {
+  height: 470px;
+  }
+}
+
+.blog-article {
+  @include media ($md) { 
+  width: 340px;
+  }
+  @include media ($lg) { 
+  width: 450px;
+  }
+  &-left {
+  display: inline;
+  float: right;
+    @include media ($lg) { 
+    margin-top: 15%;
+    }
+  }
+  &-right {
+  display: inline;
+  float: left;
+    @include media ($lg) { 
+    margin-top: 20%;
+    }
+  }
+}
+
+
+
+
+
+
+

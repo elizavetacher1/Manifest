@@ -1,0 +1,30 @@
+
+.header {
+  &__container {
+  max-width: $width;
+  padding: $sm-padding;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto; 
+    @include media($md) {
+    padding: $md-padding;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    @include media($lg) {
+    padding: 0 135px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100px;
+    margin: 0 auto;
+    }
+    }
+  }
+  
+.header-flex {
+display: flex;
+flex-direction: row;
+}

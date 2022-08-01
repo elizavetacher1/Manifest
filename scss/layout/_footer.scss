@@ -1,0 +1,39 @@
+.footer {
+  &__container  {
+  padding: $sm-padding;
+    @include media($md) {
+    padding: $md-padding;
+    }
+    @include media($lg) {
+    padding: $lg-padding;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 105px;
+    }
+  }
+  &__flex {
+  display: flex;
+  flex-direction: column;
+    @include media($lg) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 135px;
+    }
+  }
+}
+
+footer {
+background-color: #F4F4F4;
+text-align: center;
+height: 100%;
+  small {
+  display: block;
+    @include media ($lg) {
+    text-align: left;
+    margin-top: 15px;
+    }
+  }
+}

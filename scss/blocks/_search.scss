@@ -1,0 +1,20 @@
+.search {
+  margin-left: auto;
+  margin-right: 20px;
+
+  @media screen and(min-width: $md){
+    margin-right: 40px;
+  }
+
+   @include media($lg) {
+     order: 1;
+     margin-left: 80px;
+   }
+
+  &__btn {
+    &-icon {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}

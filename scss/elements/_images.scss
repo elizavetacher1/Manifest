@@ -1,0 +1,81 @@
+img {
+justify-self: center;
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+  
+.roof {
+object-fit: fill;
+}
+
+.blog-image-arrow {
+  @include media($md) {
+  order: -1;
+  }
+}
+
+svg {
+border: 2px solid $primary;
+width: 50px;
+height: 50px;
+padding: 13px;
+cursor: pointer;
+    @include media ($lg) {
+    margin-top: 40px;
+    }
+}
+
+a:hover {
+  .svg {
+  fill: $white-default; }
+  svg {
+  background: $primary;
+  } 
+} 
+
+
+.lg-properties {
+  @include media ($lg) {
+  width: 570px;
+  height: 260px; 
+  }
+}
+
+.blog-image-build-tablet {
+display: none;
+  @include media ($md) {
+  margin-top: 50px;
+  display: block;
+  }
+  @include media ($lg) {
+  display: none;
+  }
+}
+
+.blog-image-build-desktop {
+display: none;
+  @include media ($lg) {
+  display: block;
+  margin-top: 50px;
+  width: 570px;
+  height: 470px;
+  } 
+}
+
+.blog-image-build {
+  @include media($md) {
+  display: none;
+  }
+}
+
+.latest-wrapper-photo {
+height: 210px;
+  @include media ($md) {
+  width: 49%;
+  }
+  @include media ($lg) {
+  height: 260px;
+  width: 100%;
+  }
+}

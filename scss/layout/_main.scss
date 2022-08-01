@@ -1,0 +1,28 @@
+.main__container {
+width: 100%;
+margin: 0 auto; 
+margin-bottom: $sm-md-margin;
+padding: $sm-padding;
+max-width: $width;
+  @include media($md) {
+  padding: $md-padding;
+    &:last-child {
+    margin-bottom: 0;
+    }
+  }
+  @include media($lg) {
+  margin-bottom: $lg-margin-bottom;
+  padding: $lg-padding;
+  }
+}
+
+.latest-wrapper {
+  @include media($md) {
+  width: 49%;
+  height: 240px;
+  }
+  @include media($lg) {
+  width: auto;
+  height: 270px;
+  }
+}

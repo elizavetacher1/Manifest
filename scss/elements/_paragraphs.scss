@@ -1,0 +1,52 @@
+small {
+color: $secondary;
+margin-top: 25px;
+  @include media ($md) {
+  margin: 0;
+  }
+}
+  
+.note__paragraph {
+flex-direction: row;
+margin-top: 15px;
+}
+
+.main__blog-paragraph {
+margin-top: 40px;
+height: 80px;
+word-break: break-word;
+letter-spacing: 0.05em; 
+  @include media($md) {
+  overflow: hidden;
+  position: relative;
+  }
+}
+
+.small {
+display: block;
+height: 90px;
+padding-bottom: 15px;
+  @media (min-width: $md) and (max-width: $md-max) {
+  margin-left: 30%;
+  text-align: end;
+  }
+  @include media ($lg) {
+  width: 100%;
+  display: block;
+  font-size: 19px;
+  }
+}
+
+.block-small {
+width: 100%;
+  @include media ($lg) {
+  width: 35%;
+  }
+}
+
+span {
+margin-top: 34px;
+  @include media ($md) {
+  font-size: 14px;
+  }
+}
